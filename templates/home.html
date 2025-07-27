@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Página Inicial - Rádio Sem Jesus Não Dá{% endblock %}
 
@@ -13,9 +14,7 @@
   </section>
 
   <section class="flyer" id="flyer" onload="fade()">
-    <a href="" target="_blank">
-      <img src="" alt="Flyer do Evento" class="flyer-img">
-    </a>
+    <img id="flyer-img" src="{% static 'imagens/breve.jpg' %}" alt="Flyer da Rádio Sem Jesus Não Dá" width="340" height="520" />
     <div class="botoes-flyer">
       <button onclick="voltarFlyer()">⏮️ Flyer Anterior</button>
       <button onclick="trocarFlyer()">⏭️ Próximo Flyer</button>
@@ -29,4 +28,8 @@
     </audio>
   </section>
 
+{% endblock %}
+
+{% block extra_js %}
+  <script src="{% static 'scripts/scripts.js' %}"></script>
 {% endblock %}

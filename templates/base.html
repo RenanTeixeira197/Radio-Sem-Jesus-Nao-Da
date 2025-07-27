@@ -22,7 +22,7 @@
           <a href="#player" class="btn-ouvir">🎧 Ouvir Agora</a>
         </div>
         <div class="logo">
-          <img src="{% static 'imagens/logo.png' %}" alt="Logo da Rádio Sem Jesus Não Dá" />
+          <img src="{% static 'imagens/logo.png' %}" alt="Logo da Rádio Sem Jesus Não Dá" width="120" height="120"/>
         </div>
       </div>
     </header>
@@ -45,5 +45,11 @@
       <p>Contato: (00) 1234-5678</p>
       <p>Desenvolvido por: Renan Teixeira</p>
     </footer>
+    <script>
+     const STATIC_URL = "{% static '' %}";
+     </script>
+  <script src="{% static 'scripts/scripts.js' %}"></script>
+  {% block extra_js %}
+  {% endblock %}
 </body>
 </html>
