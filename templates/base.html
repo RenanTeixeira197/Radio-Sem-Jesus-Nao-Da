@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8" />
     <title>{% block title %}Rádio Sem Jesus Não Dá{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/estilo01.css' %}" />
 </head>
@@ -21,7 +21,8 @@
           <p>Levando a palavra e edificando vidas!</p>
           <a href="#player" class="btn-ouvir">🎧 Ouvir Agora</a>
         </div>
-        <img src="" alt="Logo da Igreja" class="logo" />
+        <div class="logo">
+          <img src="{% static 'imagens/logo.png' %}" alt="Logo da Rádio Sem Jesus Não Dá" />
       </div>
     </header>
 
